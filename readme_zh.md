@@ -4,6 +4,11 @@
 
 这使你能够在自己的硬件上本地运行 Gemma 3 模型，并使用为 OpenAI API 设计的客户端（例如 [Open WebUI](https://github.com/open-webui/open-webui)）与其交互。
 
+！！如果包都有了，直接运行：
+```python
+python server.py
+```
+
 ## 主要特性
 
 *   **OpenAI API 兼容:** 提供 `/v1/chat/completions` 和 `/v1/models` 端点。
