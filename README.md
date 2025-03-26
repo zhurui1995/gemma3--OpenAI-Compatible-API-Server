@@ -1,6 +1,6 @@
 # gemma3--OpenAI-Compatible-API-Server
 Gemma 3 OpenAI-Compatible API Server. Gemma 3 fits openwebui.
-
+[中文版本](readme_zh.md)
 # Gemma 3 OpenAI-Compatible API Server
 
 This project provides a FastAPI backend server that wraps the Google Gemma 3 (`gemma-3-27b-it`) large language model, exposing it through an API compatible with OpenAI's `v1/chat/completions` endpoint.
@@ -34,7 +34,7 @@ This allows you to run the Gemma 3 model locally on your own hardware and intera
 
 ### Model Files
 
-*   You need to have the `gemma-3-27b-it` model files downloaded locally. The default path configured in the script is `/home/zr/t1/google/gemma-3-27b-it`. **You must update this path in the script if your model is located elsewhere.**
+*   You need to have the `gemma-3-27b-it` model files downloaded locally. The default path configured in the script is `/home/user/t1/google/gemma-3-27b-it`. **You must update this path in the script if your model is located elsewhere.**
 
 ## Installation
 
@@ -107,7 +107,7 @@ This allows you to run the Gemma 3 model locally on your own hardware and intera
     *   Save the connection.
 5.  Go back to the main chat interface.
 6.  Click on the model selection dropdown.
-7.  You should see the model ID (e.g., `/home/zr/t1/google/gemma-3-27b-it` or the path you configured) listed. Select it.
+7.  You should see the model ID (e.g., `/home/user/t1/google/gemma-3-27b-it` or the path you configured) listed. Select it.
 8.  You can now chat with your locally hosted Gemma 3 model, with streaming enabled! You can also try uploading images if your client supports sending them via the OpenAI API format.
 
 ## API Endpoints
