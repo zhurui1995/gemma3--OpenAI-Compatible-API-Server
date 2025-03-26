@@ -20,11 +20,12 @@ import requests
 import json # Need json library for dumping
 
 # --- Configuration --- (Keep as before)
-MODEL_DIR = "google/gemma-3-27b-it"   # or local dir
+MODEL_DIR = "<your local path>/google/gemma-3-27b-it"
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3,4,5,6,7"
 DEVICE_MAP = "auto"
 MODEL_DTYPE = torch.bfloat16
-PORT = 8999
+MAX_TOKENS = 16*1024
+PORT = 8000
 HOST = "0.0.0.0"
 
 # --- Logging --- (Keep as before)
@@ -94,7 +95,7 @@ class OpenAIMessage(BaseModel):
 class OpenAIChatCompletionRequest(BaseModel):
     model: str = MODEL_DIR
     messages: List[OpenAIMessage]
-    max_tokens: Optional[int] = 1024
+    max_tokens: Optional[int] = MAX_TOKENS
     temperature: Optional[float] = 0.7
     top_p: Optional[float] = 1.0
     n: Optional[int] = 1
