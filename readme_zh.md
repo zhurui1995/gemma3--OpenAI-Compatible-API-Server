@@ -90,11 +90,10 @@ python server.py
     export CUDA_VISIBLE_DEVICES="0,1,2,4,5,6,7" # 根据需要调整索引
     ```
 
-2.  **使用 Uvicorn 启动 FastAPI 服务器:**
+2.  **启动 FastAPI 服务器:**
     ```bash
-    uvicorn main:app --host 0.0.0.0 --port 8000
+    python server.py
     ```
-    *   如果你的 Python 脚本文件名不是 `main.py`，请替换 `main`。
     *   服务器将启动，加载模型（这可能需要一些时间），并在 `http://0.0.0.0:8000` 上监听请求。
 
 ## 如何与客户端配合使用 (以 Open WebUI 为例)
