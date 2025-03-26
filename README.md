@@ -93,11 +93,10 @@ python server.py
     export CUDA_VISIBLE_DEVICES="0,1,2,4,5,6,7" # Adjust indices as needed
     ```
 
-2.  **Start the FastAPI server using Uvicorn:**
+2.  **Start the FastAPI server:**
     ```bash
-    uvicorn main:app --host 0.0.0.0 --port 8000
+    python server.py
     ```
-    *   Replace `main` with the name of your Python script if it's different.
     *   The server will start, load the model (this may take some time), and listen for requests on `http://0.0.0.0:8000`.
 
 ## Usage with Clients (Example: Open WebUI)
