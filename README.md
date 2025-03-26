@@ -7,6 +7,11 @@ This project provides a FastAPI backend server that wraps the Google Gemma 3 (`g
 
 This allows you to run the Gemma 3 model locally on your own hardware and interact with it using clients designed for the OpenAI API, such as [Open WebUI](https://github.com/open-webui/open-webui).
 
+!! directly run:
+```python
+python server.py
+```
+
 ## Features
 
 *   **OpenAI API Compatibility:** Exposes `/v1/chat/completions` and `/v1/models` endpoints.
